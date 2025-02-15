@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class BukuTamu extends Model
 {
-    // Tentukan nama tabel agar sesuai dengan migration
     protected $table = 'bukutamus';
 
     protected $fillable = [

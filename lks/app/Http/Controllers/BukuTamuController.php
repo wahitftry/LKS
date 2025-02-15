@@ -8,20 +8,17 @@ use Illuminate\Support\Facades\Storage;
 
 class BukuTamuController extends Controller
 {
-    // Tampilkan daftar buku tamu
     public function index()
     {
         $data = BukuTamu::all();
         return view('bukutamu.index', compact('data'));
     }
 
-    // Tampilkan form tambah data
     public function create()
     {
         return view('bukutamu.create');
     }
 
-    // Simpan data baru
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -45,19 +42,16 @@ class BukuTamuController extends Controller
         return redirect()->route('bukutamu.index');
     }
 
-    // Tampilkan detail data
     public function show(BukuTamu $bukutamu)
     {
         return view('bukutamu.show', compact('bukutamu'));
     }
 
-    // Tampilkan form edit data
     public function edit(BukuTamu $bukutamu)
     {
         return view('bukutamu.edit', compact('bukutamu'));
     }
 
-    // Update data
     public function update(Request $request, BukuTamu $bukutamu)
     {
         $validated = $request->validate([
@@ -81,7 +75,6 @@ class BukuTamuController extends Controller
         return redirect()->route('bukutamu.index');
     }
 
-    // Hapus data
     public function destroy(BukuTamu $bukutamu)
     {
         if($bukutamu->gambar){

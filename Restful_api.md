@@ -1,5 +1,3 @@
-penjelasan restful api
-
 RESTful API adalah sebuah arsitektur antarmuka pemrograman aplikasi yang memanfaatkan protokol HTTP untuk berkomunikasi antar sistem. Pendekatan ini dirancang untuk membuat interaksi antara client dan server menjadi sederhana, scalable, dan mudah diintegrasikan dengan berbagai platform melalui standar operasi yang konsisten. Berikut penjelasan lengkap mengenai RESTful API.
 
 ## Apa Itu RESTful API?

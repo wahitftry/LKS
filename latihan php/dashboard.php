@@ -16,6 +16,9 @@ if (!isset($_SESSION['user_id'])) {
     .header { background: #333; color: #fff; padding: 10px; text-align: center; }
     .container { padding: 20px; }
     .button-logout { background: #e74c3c; color: #fff; border: none; padding: 10px 20px; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 10px; text-align: left; }
   </style>
 </head>
 <body>
@@ -35,14 +38,19 @@ if (!isset($_SESSION['user_id'])) {
     if (!$conn) {
         die('Connection failed: ' . mysqli_connect_error());
     }
-    $result = mysqli_query($conn, "SELECT email, created_at FROM users");
+    $result = mysqli_query($conn, "SELECT id, email, created_at FROM users");
     if ($result && mysqli_num_rows($result) > 0) {
-        echo "<h2>Daftar User:</h2>";
-        echo "<ul>";
+        echo "<table>";
+        echo "<tr><th>ID</th><th>Email</th><th>Created At</th><th>Actions</th></tr>";
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<li>{$row['email']} - {$row['created_at']}</li>";
+            echo "<tr>";
+            echo "<td>{$row['id']}</td>";
+            echo "<td>{$row['email']}</td>";
+            echo "<td>{$row['created_at']}</td>";
+            echo "<td><a href='edit.php?id={$row['id']}'>Edit</a> | <a href='delete.php?id={$row['id']}'>Hapus</a></td>";
+            echo "</tr>";
         }
-        echo "</ul>";
+        echo "</table>";
     } else {
         echo "<p>Tidak ada user yang terdaftar.</p>";
     }

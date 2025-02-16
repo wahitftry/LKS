@@ -3,7 +3,7 @@ session_start();
 // Koneksi ke database
 $host = 'localhost';
 $user = 'root';
-$pass = '';
+$pass = '260704';
 $db   = 'login_db';
 
 $conn = mysqli_connect($host, $user, $pass, $db);

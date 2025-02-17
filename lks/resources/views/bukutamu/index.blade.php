@@ -10,7 +10,7 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table id="bukutamuTable" class="table">
+                        <table id="table1" class="table">
                             <thead>
                                 <tr>
                                     <th>Nama</th>

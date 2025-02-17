@@ -1,6 +1,6 @@
 @include('layout.header')
 @include('layout.sidebar')
-<div class="page-content">
+<div class="container-fluid page-content">
     <section class="row">
         <div class="col-12">
             <div class="card">

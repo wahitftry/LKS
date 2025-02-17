@@ -1,11 +1,11 @@
 @include('layout.header')
 @include('layout.sidebar')
 <div class="container-fluid page-content">
-    <section class="row">
-        <div class="col-12">
+    <section class="section">
+        <!-- <div class="col-12"> -->
             <div class="card">
                 <div class="card-header">
-                    <h3>Daftar Buku Tamu</h3>
+                    <h3 class="card-title">Daftar Buku Tamu</h3>
                     <a href="{{ route('bukutamu.create') }}" class="btn btn-primary">Tambah Data</a>
                 </div>
                 <div class="card-body">
@@ -51,7 +51,7 @@
                     <!-- ...existing pagination if any... -->
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </section>
 </div>
 <!-- Include DataTables CSS and JS -->

@@ -30,7 +30,15 @@ class BukuTamuController extends Controller
             'gambar' => 'nullable|image|max:2048'
         ], [
             'nama.required'   => 'Nama wajib diisi',
-            // ...pesan validasi lainnya...
+            'email.required'  => 'Email wajib diisi',
+            'email.email'     => 'Email tidak valid',
+            'email.unique'    => 'Email sudah terdaftar',
+            'phone.required'  => 'Nomor telepon wajib diisi',
+            'city.required'   => 'Kota wajib diisi',
+            'status.required' => 'Status wajib diisi',
+            'status.in'       => 'Status tidak valid',
+            'gambar.image'    => 'Gambar harus berupa file gambar',
+            'gambar.max'      => 'Ukuran gambar maksimal 2MB'
         ]);
 
         if($request->hasFile('gambar')){

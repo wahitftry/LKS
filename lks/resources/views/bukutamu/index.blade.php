@@ -9,7 +9,7 @@
                     <a href="{{ route('bukutamu.create') }}" class="btn btn-primary">Tambah Data</a>
                 </div>
                 <div class="card-body">
-                    <table class="table table-striped">
+                    <table id="bukutamuTable" class="table table-striped">
                         <thead>
                             <tr>
                                 <th>Nama</th>
@@ -52,4 +52,13 @@
         </div>
     </section>
 </div>
+<!-- Include DataTables CSS and JS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#bukutamuTable').DataTable();
+});
+</script>
 @include('layout.footer')

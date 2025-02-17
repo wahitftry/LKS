@@ -9,8 +9,8 @@
                     <a href="{{ route('bukutamu.create') }}" class="btn btn-primary">Tambah Data</a>
                 </div>
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <table id="bukutamuTable" class="table table-striped">
+                    <div class="table-responsive datatable-minimal">
+                        <table id="bukutamuTable" class="table">
                             <thead>
                                 <tr>
                                     <th>Nama</th>

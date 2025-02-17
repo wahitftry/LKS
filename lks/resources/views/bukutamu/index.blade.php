@@ -13,6 +13,7 @@
                         <table id="table1" class="table">
                             <thead>
                                 <tr>
+                                    <th>No</th> <!-- Added sequential number column -->
                                     <th>Nama</th>
                                     <th>Email</th>
                                     <th>Telepon</th>
@@ -25,6 +26,7 @@
                             <tbody>
                             @foreach($data as $item)
                                 <tr>
+                                    <td>{{ $loop->iteration }}</td> <!-- Output sequence number -->
                                     <td>{{ $item->nama }}</td>
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->phone }}</td>

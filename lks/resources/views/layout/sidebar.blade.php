@@ -1,7 +1,9 @@
 <body>
     <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
-    <div id="app">
-        <div id="sidebar">
+    <!-- New Responsive Grid Container -->
+    <div id="app" class="container-fluid">
+      <div class="row">
+        <div id="sidebar" class="col-12 col-md-4 col-lg-3">
             <div class="sidebar-wrapper active">
     <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
@@ -56,7 +58,7 @@
     </div>
 </div>
         </div>
-        <div id="main">
+        <div id="main" class="col-12 col-md-8 col-lg-9">
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>

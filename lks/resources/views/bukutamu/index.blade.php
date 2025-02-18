@@ -61,7 +61,7 @@
 <script>
 $(document).ready(function() {
   $('#bukutamuTable').DataTable({
-    responsive: true  // Enabled responsive option
+    responsive: true 
   });
 });
 </script> -->

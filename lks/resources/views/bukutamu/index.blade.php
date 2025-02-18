@@ -1,3 +1,9 @@
+{{-- 
+Algoritma:
+1. Mengambil data buku tamu dan menampilkannya dalam tabel.
+2. Menambahkan nomor urut dengan $loop->iteration.
+3. Menampilkan aksi (lihat, edit, hapus) untuk setiap data.
+--}}
 @include('layout.header')
 @include('layout.sidebar')
 <div class="container-fluid page-content">

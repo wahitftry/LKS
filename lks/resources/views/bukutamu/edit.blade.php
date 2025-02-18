@@ -1,3 +1,9 @@
+{{-- 
+Algoritma:
+1. Mengambil data buku tamu yang akan diedit.
+2. Menampilkan form dengan nilai data saat ini.
+3. Setelah update, data akan disimpan dan diarahkan ke index.
+--}}
 @include('layout.header')
 @include('layout.sidebar')
 <div class="container-fluid page-content">

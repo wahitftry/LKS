@@ -1,3 +1,9 @@
+{{-- 
+Algoritma:
+1. Mengambil data detail buku tamu.
+2. Menampilkan informasi detail menggunakan list group.
+3. Jika ada gambar, tampilkan gambar secara responsif.
+--}}
 @include('layout.header')
 @include('layout.sidebar')
 <div class="container-fluid page-content">

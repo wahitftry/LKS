@@ -1,3 +1,8 @@
+{{-- 
+Algoritma:
+1. Menampilkan form untuk menambah data buku tamu baru.
+2. Form mengirimkan data ke metode store di BukuTamuController.
+--}}
 @include('layout.header')
 @include('layout.sidebar')
 <div class="container-fluid page-content">

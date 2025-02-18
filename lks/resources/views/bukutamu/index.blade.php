@@ -9,6 +9,7 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
+                        <!-- Menampilkan data dari tabel bukutamu -->
                         <table id="table1" class="table">
                             <thead>
                                 <tr>
@@ -53,16 +54,4 @@
             </div>
     </section>
 </div>
-<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-<script>
-$(document).ready(function() {
-  $('#bukutamuTable').DataTable({
-    responsive: true 
-  });
-});
-</script> -->
 @include('layout.footer')

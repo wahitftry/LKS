@@ -1,6 +1,5 @@
 <body>
     <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
-    <!-- New Responsive Grid Container -->
     <div id="app" class="container-fluid">
       <div class="row">
         <div id="sidebar" class="col-12 col-md-4 col-lg-3">

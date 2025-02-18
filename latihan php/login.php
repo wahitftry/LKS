@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Siapkan query untuk mencegah SQL injection
-    $stmt = mysqli_prepare($conn, "SELECT id FROM users WHERE email = ? AND password = ?");
+    $stmt = mysqli_prepare($conn, "SELECT id FROM users WHERE email = ? AND `password` = ?");
     mysqli_stmt_bind_param($stmt, "ss", $email, $password);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_store_result($stmt);

@@ -2,7 +2,6 @@
 @include('layout.sidebar')
 <div class="container-fluid page-content">
     <section class="section">
-        <!-- <div class="col-12"> -->
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">Daftar Buku Tamu</h3>
@@ -13,7 +12,7 @@
                         <table id="table1" class="table">
                             <thead>
                                 <tr>
-                                    <th>No</th> <!-- Added sequential number column -->
+                                    <th>No</th>
                                     <th>Nama</th>
                                     <th>Email</th>
                                     <th>Telepon</th>
@@ -26,7 +25,7 @@
                             <tbody>
                             @foreach($data as $item)
                                 <tr>
-                                    <td>{{ $loop->iteration }}</td> <!-- Output sequence number -->
+                                    <td>{{ $loop->iteration }}</td>
                                     <td>{{ $item->nama }}</td>
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->phone }}</td>
@@ -50,13 +49,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- ...existing pagination if any... -->
                 </div>
             </div>
-        <!-- </div> -->
     </section>
 </div>
-<!-- Include DataTables CSS and JS -->
 <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

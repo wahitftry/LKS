@@ -7,7 +7,6 @@
         <h4 class="card-title">Detail Buku Tamu</h4>
       </div>
       <div class="card-body">
-        <!-- Using list group for details -->
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><strong>Nama:</strong> {{ $bukutamu->nama }}</li>
           <li class="list-group-item"><strong>Email:</strong> {{ $bukutamu->email }}</li>

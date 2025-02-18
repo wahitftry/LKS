@@ -10,27 +10,22 @@
         <div class="card-body">
           <form action="{{ route('bukutamu.update', $bukutamu->id) }}" method="POST" enctype="multipart/form-data">
             @csrf @method('PUT')
-            <!-- ...existing form field nama... -->
             <div class="form-group">
               <label>Nama</label>
               <input type="text" name="nama" class="form-control" value="{{ $bukutamu->nama }}" required>
             </div>
-            <!-- ...existing form field email... -->
             <div class="form-group">
               <label>Email</label>
               <input type="email" name="email" class="form-control" value="{{ $bukutamu->email }}" required>
             </div>
-            <!-- ...existing form field phone... -->
             <div class="form-group">
               <label>Telepon</label>
               <input type="text" name="phone" class="form-control" value="{{ $bukutamu->phone }}" required>
             </div>
-            <!-- ...existing form field city... -->
             <div class="form-group">
               <label>Kota</label>
               <input type="text" name="city" class="form-control" value="{{ $bukutamu->city }}" required>
             </div>
-            <!-- ...existing form field status... -->
             <div class="form-group">
               <label>Status</label>
               <select name="status" class="form-control" required>
@@ -38,7 +33,6 @@
                 <option value="Inactive" {{ $bukutamu->status == 'Inactive' ? 'selected' : '' }}>Inactive</option>
               </select>
             </div>
-            <!-- upload gambar -->
             <div class="form-group">
               <label>Unggah Gambar</label>
               <input type="file" name="gambar" class="form-control" accept="image/*">
